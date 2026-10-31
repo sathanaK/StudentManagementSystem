@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">MINI PROJECT</p>
+      <h1>Student Management System</h1>
+      <p>Add, view and remove student records.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Add a student</h2>
+      <form id="studentForm">
+        <label>Student name<input id="studentName" type="text" placeholder="e.g. Anu Kumar" required></label>
+        <label>Register number<input id="registerNo" type="text" placeholder="e.g. 24CS001" required></label>
+        <label>Department<input id="department" type="text" placeholder="e.g. Computer Science" required></label>
+        <button type="submit">Add student</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="list-heading">
+        <h2>Student records</h2>
+        <span id="studentCount">0 students</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Name</th><th>Register no.</th><th>Department</th><th>Action</th></tr></thead>
+          <tbody id="studentList"><tr class="empty"><td colspan="4">No students added yet.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    <footer>Student Management System · HTML, CSS & JavaScript</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
